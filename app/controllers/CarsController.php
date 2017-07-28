@@ -1,7 +1,8 @@
 <?php
+namespace PHPBootcamp\Controllers;
 
-include_once 'models/cars.php';
-include_once 'AbstractController.php';
+//include_once 'models/cars.php';
+//include_once 'AbstractController.php';
 
 class CarsController extends AbstractController
 {
@@ -12,7 +13,7 @@ class CarsController extends AbstractController
         $listOfCars = $cars->getRandomCars();
 
         $templateVariables = ['cars' => $listOfCars];
-        $template = 'views/cars.view.php';
+        $template = '/cars.view.php';
 
         return $this->render($template, $templateVariables);
     }

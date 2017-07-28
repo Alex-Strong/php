@@ -1,4 +1,5 @@
 <?php
+namespace PHPBootcamp\Controllers;
 
 interface ControllerInterface
 {

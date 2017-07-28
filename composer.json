@@ -1,0 +1,19 @@
+{
+    "name": "accenture/bootcamp",
+    "description": "Awesome php bootcamp",
+    "require-dev": {
+        "symfony/var-dumper": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "Alex Strong",
+            "email": "somethhing@some.thing"
+        }
+    ],
+    "require": {
+        "symfony/routing": "^3.3"
+    },
+    "autoload":{
+        "psr-4":{"PHPBootcamp\\": "app/"}
+    }
+}

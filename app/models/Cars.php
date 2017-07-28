@@ -1,4 +1,5 @@
 <?php
+namespace PHPBootcamp\Models;
 
 class Cars
 {

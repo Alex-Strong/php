@@ -1,7 +1,11 @@
 <?php
 
-include_once 'ControllerInterface.php';
-include_once 'ContainerInterface.php';
+namespace PHPBootcamp\Controllers;
+
+//include_once 'ControllerInterface.php';
+//include_once 'ContainerInterface.php';
+
+use PHPBootcamp\ContainerInterface;
 
 abstract class AbstractController implements ControllerInterface
 {
@@ -15,6 +19,6 @@ abstract class AbstractController implements ControllerInterface
 
     public function render(string $template, array $content = []) : string
     {
-        return include $template;
+        return include $this->container->get("resourse.views").$template;
     }
 }
